@@ -43,11 +43,16 @@ android {
 }
 
 dependencies {
+    // Dagger
+    implementation ("com.google.dagger:dagger:2.51")
+    kapt ("com.google.dagger:dagger-compiler:2.51")
+
     // Room
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
+    
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
