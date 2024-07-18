@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity(), ShopItemFragment.OnEditingFinishedList
                 Log.d("ShopListProvider999", shopItem.toString())
 
             }
+            cursor?.close()
         }
     }
 
